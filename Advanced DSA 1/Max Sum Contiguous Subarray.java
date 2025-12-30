@@ -1,6 +1,6 @@
 int n = A.length;
 
-int ans = A[0];
+int ans = Integer.MIN_VALUE;
 int sum = 0;
 
 for (int i = 0; i < n; i++) {
