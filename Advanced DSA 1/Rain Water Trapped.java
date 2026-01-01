@@ -1,6 +1,10 @@
 int n = A.length;
 int ans = 0;
 
+if (n <= 2) {
+	return 0;
+}
+
 int[] prArr = new int[n];
 int[] suArr = new int[n];
 
