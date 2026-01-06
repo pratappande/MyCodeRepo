@@ -1,10 +1,10 @@
 public class Solution {
-    public int numSetBits(int A) {
-        int count = 0;
-        while (A != 0) {
-            A = A & (A-1);
-            count++;
+    public int singleNumber(final int[] A) {
+        int n = A.length;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans ^= A[i];
         }
-        return count;
+        return ans;
     }
 }
